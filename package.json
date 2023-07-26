@@ -1,0 +1,27 @@
+{
+  "name": "cofferm",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/index.css -o ./src/styles.css",
+    "tailwind:watch": "npx tailwindcss -i ./src/index.css -o ./src/styles.css --watch",
+    "dev": "concurrently \"pnpm vite\" \"pnpm tailwind:watch\"",
+    "build": "pnpm tailwind --mode production && pnpm tsc && pnpm vite build",
+    "preview": "pnpm tailwind --mode development && pnpm vite preview",
+    "tauri": "tauri"
+  },
+  "devDependencies": {
+    "@tauri-apps/api": "2.0.0-alpha.5",
+    "@tauri-apps/cli": "2.0.0-alpha.10",
+    "@types/node": "^20.4.4",
+    "autoprefixer": "^10.4.14",
+    "concurrently": "^8.2.0",
+    "daisyui": "^3.4.0",
+    "internal-ip": "^8.0.0",
+    "postcss": "^8.4.27",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^4.8.2",
+    "vite": "^4.2.1"
+  }
+}
