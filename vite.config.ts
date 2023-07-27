@@ -1,9 +1,11 @@
 import { defineConfig, UserConfig } from 'vite'
 import { internalIpV4 } from 'internal-ip'
+import solidPlugin from "vite-plugin-solid";
 
 export default defineConfig(async () => {
     const host = await internalIpV4();
     return {
+        plugins: [solidPlugin()],
         // prevent vite from obscuring rust errors
         clearScreen: false,
         server: {

@@ -3,6 +3,13 @@
     windows_subsystem = "windows"
 )]
 
+#[tauri::command]
+fn check() -> String {
+    "Check OK".to_owned()
+}
+
 pub fn main() {
-    cofferm::AppBuilder::new().run();
+    cofferm::AppBuilder::new()
+        .build(|builder| builder.invoke_handler(tauri::generate_handler![check]))
+        .run();
 }
