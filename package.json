@@ -13,10 +13,13 @@
     "tauri": "tauri"
   },
   "dependencies": {
+    "@solid-primitives/refs": "^1.0.4",
     "@solidjs/router": "^0.8.2",
     "@tauri-apps/api": "2.0.0-alpha.5",
+    "chart.js": "^4.3.2",
+    "solid-chartjs": "^1.3.8",
     "solid-heroicons": "^3.2.4",
-    "solid-js": "^1.7.0"
+    "solid-js": "^1.7.8"
   },
   "devDependencies": {
     "@tauri-apps/cli": "2.0.0-alpha.10",
@@ -27,8 +30,8 @@
     "internal-ip": "^8.0.0",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
-    "typescript": "^4.8.2",
-    "vite": "^4.2.1",
+    "typescript": "^5.1",
+    "vite": "^4.4.6",
     "vite-plugin-solid": "^2.5.0"
   }
 }
