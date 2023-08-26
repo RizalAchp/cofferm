@@ -1,40 +1,40 @@
 {
-  "build": {
-    "beforeBuildCommand": "pnpm build",
-    "beforeDevCommand": "pnpm dev",
-    "devPath": "http://localhost:42069",
-    "distDir": "../dist",
-    "withGlobalTauri": true
-  },
-  "package": {
-    "productName": "cofferm",
-    "version": "0.0.0"
-  },
-  "plugins": {},
-  "tauri": {
-    "bundle": {
-      "active": true,
-      "icon": [
-        "icons/32x32.png",
-        "icons/128x128.png",
-        "icons/128x128@2x.png",
-        "icons/icon.icns",
-        "icons/icon.ico"
-      ],
-      "identifier": "com.rizalachp.cofferm",
-      "targets": "all"
+    "build": {
+        "beforeBuildCommand": "pnpm build",
+        "beforeDevCommand": "pnpm dev",
+        "devPath": "http://localhost:42069",
+        "distDir": "../dist",
+        "withGlobalTauri": true
     },
-    "security": {
-      "csp": null
+    "package": {
+        "productName": "cofferm",
+        "version": "0.0.0"
     },
-    "windows": [
-      {
-        "fullscreen": false,
-        "height": 600,
-        "resizable": true,
-        "title": "cofferm",
-        "width": 800
-      }
-    ]
-  }
+    "plugins": {},
+    "tauri": {
+        "bundle": {
+            "active": true,
+            "icon": [
+                "icons/32x32.png",
+                "icons/128x128.png",
+                "icons/128x128@2x.png",
+                "icons/icon.icns",
+                "icons/icon.ico"
+            ],
+            "identifier": "com.rizalachp.cofferm",
+            "targets": "all"
+        },
+        "security": {
+            "csp": null
+        },
+        "windows": [
+            {
+                "fullscreen": false,
+                "height": 600,
+                "resizable": true,
+                "title": "cofferm",
+                "width": 800
+            }
+        ]
+    }
 }

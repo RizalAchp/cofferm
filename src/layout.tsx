@@ -6,6 +6,8 @@ import { squares_2x2, cog_6Tooth, bellAlert, chartBar, } from "solid-heroicons/s
 import { moon, sun } from "solid-heroicons/outline";
 import { getTheme, swapTheme } from "./utils/theme";
 
+import * as tauri  from "@tauri-apps/api";
+
 type LayoutProps = {
     children: JSX.Element;
 }
@@ -18,6 +20,7 @@ export default function Layout(props: LayoutProps) {
         setCurrTheme(new_theme);
     }
 
+    window.__TAURI_IPC__.arguments
 
     return <div class="flex flex-col">
         <div class="navbar bg-base-100 z-10 shadow-md">
